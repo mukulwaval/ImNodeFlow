@@ -1,5 +1,7 @@
 #ifndef IM_NODE_FLOW
 #define IM_NODE_FLOW
+#define IMGUI_DEFINE_MATH_OPERATORS
+
 #pragma once
 
 #include <iostream>
