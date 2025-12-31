@@ -896,6 +896,8 @@ namespace ImFlow
          * @brief <BR>Update the isSelected status of the node
          */
         void updatePublicStatus() { m_selected = m_selectedNext; }
+
+        std::shared_ptr<NodeStyle> m_style;
     private:
         NodeUID m_uid = 0;
         std::string m_title;
@@ -903,7 +905,6 @@ namespace ImFlow
         ImVec2 m_size;
         ImVec2 m_fullSize;
         ImNodeFlow* m_inf = nullptr;
-        std::shared_ptr<NodeStyle> m_style;
         bool m_selected = false, m_selectedNext = false;
         bool m_dragged = false;
         bool m_destroyed = false;
