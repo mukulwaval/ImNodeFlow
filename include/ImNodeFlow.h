@@ -517,7 +517,10 @@ namespace ImFlow
          * @return Reference to blacklist
          */
         std::vector<std::string>& get_recursion_blacklist() { return m_pinRecursionBlacklist; }
-    private:
+
+        InfStyler m_style;
+
+       private:
         std::string m_name;
         ContainedContext m_context;
 
@@ -537,8 +540,6 @@ namespace ImFlow
         bool m_draggingNode = false, m_draggingNodeNext = false;
         Pin* m_hovering = nullptr;
         Pin* m_dragOut = nullptr;
-
-        InfStyler m_style;
     };
 
     // -----------------------------------------------------------------------------------------------------------------
