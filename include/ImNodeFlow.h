@@ -290,6 +290,8 @@ namespace ImFlow
         {
             m_instances++;
             m_context.config().extra_window_wrapper = true;
+            m_style.colors.background =
+                IM_COL32(0.09803922f, 0.09803922f, 0.09803922f, 1.0f);
             m_context.config().color = m_style.colors.background;
         }
 
@@ -519,8 +521,7 @@ namespace ImFlow
         std::vector<std::string>& get_recursion_blacklist() { return m_pinRecursionBlacklist; }
 
         InfStyler m_style;
-
-       private:
+    private:
         std::string m_name;
         ContainedContext m_context;
 
