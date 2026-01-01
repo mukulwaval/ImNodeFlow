@@ -194,6 +194,7 @@ namespace ImFlow {
                 m_posTarget = m_pos;
             }
         }
+        draw_list->ChannelsMerge();
         ImGui::PopID();
 
         // Deleting dead pins
