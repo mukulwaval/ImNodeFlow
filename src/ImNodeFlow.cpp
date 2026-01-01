@@ -53,8 +53,7 @@ namespace ImFlow {
         ImVec2 paddingTL = {m_style->padding.x, m_style->padding.y};
         ImVec2 paddingBR = {m_style->padding.z, m_style->padding.w};
 
-        draw_list->ChannelsSplit(2);
-        draw_list->ChannelsSetCurrent(1); // Foreground
+        //draw_list->ChannelsSetCurrent(1); // Foreground
         ImGui::SetCursorScreenPos(offset + m_pos);
 
         ImGui::BeginGroup();
@@ -194,7 +193,6 @@ namespace ImFlow {
                 m_posTarget = m_pos;
             }
         }
-        draw_list->ChannelsMerge();
         ImGui::PopID();
 
         // Deleting dead pins
